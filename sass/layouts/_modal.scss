@@ -1,0 +1,47 @@
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  transition: transform var(--time-animation) var(--function-animation),
+    opacity var(--time-animation) var(--function-animation);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
+  opacity: 1;
+  width: 100%;
+
+  max-width: 450px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  background-color: var(--main-bg-color);
+  transition: transform 1000ms var(--function-animation), opacity 1000ms var(--function-animation);
+  @media (min-width: 1200px) {
+    max-width: 528px;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.close-button__icon {
+  transition: fill var(--time-animation) var(--function-animation);
+
+  .close-button:hover &,
+  .close-button:focus & {
+    fill: var(--logo-color);
+  }
+}

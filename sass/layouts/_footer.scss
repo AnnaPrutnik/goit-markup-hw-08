@@ -1,0 +1,128 @@
+.footer {
+  @extend %dark-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__logo {
+    padding: 0;
+  }
+}
+
+.logo__end--light,
+.adress__name {
+  color: var(--main-bg-color);
+}
+
+.adress__wrap {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.adress__item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+
+.adress__link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--time-animation) var(--function-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-color);
+  }
+}
+
+.footer__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+
+  margin-bottom: 20px;
+}
+
+.subscibe__fields-form {
+  background-color: inherit;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  @media (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+}
+
+.subscibe__fields-form,
+.subscibe__fields-form::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--main-bg-color);
+}
+
+.subscibe__fields-form::placeholder {
+  opacity: 0.6;
+}
+
+.subscribe__icon {
+  fill: var(--main-bg-color);
+  margin-left: 10px;
+}
+
+@media (max-width: 1199px) {
+  .communicate,
+  .adress {
+    margin-bottom: 60px;
+  }
+  .footer__container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .subscibe__fields-form {
+    display: block;
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .communicate,
+  .adress {
+    flex-basis: calc((50% - 45px) / 2);
+  }
+
+  .subscribe {
+    flex-basis: calc(50% - 15px);
+  }
+
+  .subscribe__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subscibe__fields-form {
+    width: 358px;
+  }
+}

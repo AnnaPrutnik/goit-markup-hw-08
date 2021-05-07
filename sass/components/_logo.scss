@@ -1,0 +1,24 @@
+.logo {
+  text-decoration: none;
+  font-family: var(--second-font);
+  font-weight: 700;
+  line-height: 1.174;
+
+  @media (max-width: 1199.98px) {
+    font-size: 24px;
+    padding: 16px 0;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    padding: 24px 0;
+  }
+}
+
+.logo__beggin {
+  color: var(--logo-color);
+}
+
+.logo__end {
+  color: var(--logo-dark-color);
+}
