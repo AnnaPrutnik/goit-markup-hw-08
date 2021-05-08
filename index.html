@@ -120,16 +120,16 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list grid work__grid-item">
                     <li class="grid__item work__item">
-                        <img src="./images/mainpage/box1.jpg" alt="Десктопные приложения" width="370">
+                        <img src="./images/mainpage/work/box1.jpg"  srcset="./images/mainpage/work/box1.jpg 1x, ./images/mainpage/work/box1@2x.jpg 2x" alt="Десктопные приложения" width="370px">
                         <h3 class="work__name">Десктопные приложения</h3>
                     </li>
                     <li class="grid__item work__item">
-                        <img src="./images/mainpage/box2.jpg" alt="Мобильные приложения" width="370">
+                        <img src="./images/mainpage/work/box2.jpg"  srcset="./images/mainpage/work/box2.jpg 1x, ./images/mainpage/work/box2@2x.jpg 2x"  alt="Мобильные приложения" width="370px">
                         <h3 class="work__name">Мобильные приложения</h3>
                     </li>
                     <li class="grid__item work__item">
-                        <img src="./images/mainpage/box3.jpg" alt="Дизайнерские решения" width="370">
-                        <h3 class="work__name">Мобильные приложения</h3>
+                        <img src="./images/mainpage/work/box3.jpg" srcset="./images/mainpage/work/box3.jpg 1x, ./images/mainpage/work/box3@2x.jpg 2x" alt="Дизайнерские решения" width="370px">
+                       <h3 class="work__name">Дизайнерские решения</h3>
                     </li>
                 </ul>
             </div>
@@ -141,7 +141,13 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="list grid command__grid-item">
                     <li class="command__item grid__item">
-                        <img src="./images/mainpage/pers1.jpg" alt="Игорь Демьяненко" width="450">
+                        <picture>
+                            <source srcset="./images/mainpage/command/desktop-pers1.jpg 1x, ./images/mainpage/command/desktop-pers1@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" >
+                            <source srcset="./images/mainpage/command/tablet-pers1.jpg 1x, ./images/mainpage/command/tablet-pers1@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" >
+                            <img src="./images/mainpage/command/mobile-pers1.jpg" srcset="./images/mainpage/command/mobile-pers1.jpg 1x, ./images/mainpage/command/mobile-pers1@2x.jpg 2x" alt="Игорь Демьяненко" width="450px">
+                         </picture>
+                        
                         <div class="card">
                             <h3 class="card__name">Игорь Демьяненко</h3>
                             <p class="card__prof">Product Designer</p>
@@ -179,7 +185,17 @@
                         
                     </li>
                     <li class="command__item grid__item">
-                        <img src="./images/mainpage/pers2.jpg" alt="Ольга Репина" width="450">
+                        <picture>
+                            <source srcset="./images/mainpage/command/desktop-pers2.jpg 1x, ./images/mainpage/command/desktop-pers2@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" >
+                            <source srcset="./images/mainpage/command/tablet-pers2.jpg 1x, ./images/mainpage/command/tablet-pers2@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" > 
+                            <img src="./images/mainpage/command/mobile-pers2.jpg"
+                            srcset="./images/mainpage/command/mobile-pers2.jpg 1x, ./images/mainpage/command/mobile-pers2@2x.jpg 2x"
+                                width="450px"
+                                alt="Ольга Репина">
+                        </picture>
+                      
                         <div class="card">
                             <h3 class="card__name">Ольга Репина</h3>
                             <p class="card__prof">Frontend Developer</p>
@@ -216,7 +232,18 @@
                         </div>
                     </li>
                     <li class="command__item grid__item">
-                        <img src="./images/mainpage/pers3.jpg" alt="Николай Тарасов" width="450">
+                        <picture >
+                            <source srcset="./images/mainpage/command/desktop-pers3.jpg 1x, ./images/mainpage/command/desktop-pers3@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" > 
+                            <source srcset="./images/mainpage/command/tablet-pers3.jpg 1x, ./images/mainpage/command/tablet-pers3@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" >
+                            
+                            <img src="./images/mainpage/command/mobile-pers3.jpg"
+                            srcset="./images/mainpage/command/mobile-pers3.jpg 1x, ./images/mainpage/command/mobile-pers3@2x.jpg 2x"
+                               width="450px"
+                                alt="Николай Тарасов">
+                        </picture>
+                      
                         <div class="card">
                             <h3 class="card__name">Николай Тарасов</h3>
                             <p class="card__prof">Marketing</p>
@@ -253,8 +280,15 @@
                     </div>
                     </li>
                     <li class="command__item grid__item">
-                        
-                        <img src="./images/mainpage/pers4.jpg" alt="Михаил Ермаков" width="450">
+                        <picture>
+                            <source srcset="./images/mainpage/command/desktop-pers4.jpg 1x, ./images/mainpage/command/desktop-pers4@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" >
+                            <source srcset="./images/mainpage/command/tablet-pers4.jpg 1x, ./images/mainpage/command/tablet-pers4@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" >
+                            <img src="./images/mainpage/command/mobile-pers4.jpg" srcset="./images/mainpage/command/mobile-pers4.jpg 1x, ./images/mainpage/command/mobile-pers4@2x.jpg 2x" width="450px"
+                                alt="Михаил Ермаков">
+                        </picture>
+                      
                         <div class="card">
                             <h3 class="card__name">Михаил Ермаков</h3>
                             <p class="card__prof">UI Designer</p>
